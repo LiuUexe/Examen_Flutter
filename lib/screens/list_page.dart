@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_examen/screens/home_page.dart';
 import 'detail_page.dart';
 
 class ListPage extends StatelessWidget {
@@ -6,9 +7,7 @@ class ListPage extends StatelessWidget {
 
   // Cambia a lista vacía [] para probar el estado vacío
   static const List<String> _items = [
-    'Tarea A',
-    'Tarea B',
-    'Tarea C',
+
   ];
 
   @override
@@ -34,7 +33,7 @@ class ListPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (_) => Home(),
+                        builder: (_) => HomePage(),
                       ),
                     );
                   },
